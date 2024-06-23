@@ -1,0 +1,7 @@
+{  
+    "sepolia": {
+    "chain_id": 11155111,
+    "rpc": "https://sepolia.infura.io/v3/a3ea7aca6fce4e6fa10a72aaf978f409",
+    "subgraph": "https://api.studio.thegraph.com/query/62777/dummy/version/latest⁠"
+    }
+}

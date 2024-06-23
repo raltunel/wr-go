@@ -1,0 +1,11 @@
+query($minTime: BigInt, $maxTime: BigInt, $orderDir: OrderDirection) {
+  contractCreateds(first: 1000, where: { blockTimestamp_gte: $minTime, blockTimestamp_lte: $maxTime }, 
+    orderBy: blockNumber, orderDirection: $orderDir) {
+    blockNumber
+    blockTimestamp
+    creator
+    id
+    newContract
+    transactionHash
+  }
+}

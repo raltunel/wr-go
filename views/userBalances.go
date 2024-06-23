@@ -4,13 +4,6 @@ import (
 	"github.com/CrocSwap/graphcache-go/types"
 )
 
-type UserTokensResponse struct {
-	ChainId types.ChainId      `json:"chainId"`
-	User    types.EthAddress   `json:"user"`
-	Block   int64              `json:"block"`
-	Tokens  []types.EthAddress `json:"tokens"`
-}
-
 func (v *Views) QueryUserTokens(chainId types.ChainId, user types.EthAddress) UserTokensResponse {
 	resp := UserTokensResponse{
 		ChainId: chainId,
